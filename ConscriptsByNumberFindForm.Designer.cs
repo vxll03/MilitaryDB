@@ -1,0 +1,105 @@
+﻿namespace Military
+{
+    partial class ConscriptsByNumberFindForm
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConscriptsByNumberFindForm));
+            this.ConscriptFindBtn = new System.Windows.Forms.Button();
+            this.ConscriptFindTextBox = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // ConscriptFindBtn
+            // 
+            this.ConscriptFindBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(60)))), ((int)(((byte)(41)))));
+            this.ConscriptFindBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(24)))), ((int)(((byte)(16)))));
+            this.ConscriptFindBtn.FlatAppearance.BorderSize = 2;
+            this.ConscriptFindBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ConscriptFindBtn.Font = new System.Drawing.Font("Montserrat Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ConscriptFindBtn.ForeColor = System.Drawing.Color.White;
+            this.ConscriptFindBtn.Location = new System.Drawing.Point(104, 114);
+            this.ConscriptFindBtn.Name = "ConscriptFindBtn";
+            this.ConscriptFindBtn.Size = new System.Drawing.Size(143, 51);
+            this.ConscriptFindBtn.TabIndex = 5;
+            this.ConscriptFindBtn.Text = "Найти";
+            this.ConscriptFindBtn.UseVisualStyleBackColor = false;
+            this.ConscriptFindBtn.Click += new System.EventHandler(this.ConscriptFindBtn_Click);
+            // 
+            // ConscriptFindTextBox
+            // 
+            this.ConscriptFindTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(60)))), ((int)(((byte)(41)))));
+            this.ConscriptFindTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ConscriptFindTextBox.Font = new System.Drawing.Font("Montserrat Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ConscriptFindTextBox.ForeColor = System.Drawing.Color.White;
+            this.ConscriptFindTextBox.Location = new System.Drawing.Point(81, 50);
+            this.ConscriptFindTextBox.Name = "ConscriptFindTextBox";
+            this.ConscriptFindTextBox.Size = new System.Drawing.Size(184, 26);
+            this.ConscriptFindTextBox.TabIndex = 4;
+            this.ConscriptFindTextBox.TextChanged += new System.EventHandler(this.ConscriptFindTextBox_TextChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Montserrat Light", 14F);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(39, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(293, 26);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Введите номер призывника";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // ConscriptsByNumberFindForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(121)))), ((int)(((byte)(82)))));
+            this.ClientSize = new System.Drawing.Size(360, 183);
+            this.Controls.Add(this.ConscriptFindBtn);
+            this.Controls.Add(this.ConscriptFindTextBox);
+            this.Controls.Add(this.label1);
+            this.ForeColor = System.Drawing.Color.White;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "ConscriptsByNumberFindForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Поиск призывника по номеру";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Button ConscriptFindBtn;
+        private System.Windows.Forms.TextBox ConscriptFindTextBox;
+        private System.Windows.Forms.Label label1;
+    }
+}

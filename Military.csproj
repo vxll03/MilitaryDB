@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E548780A-B0AC-46B9-AB21-B3BFBA055A8C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Military</RootNamespace>
+    <AssemblyName>Military</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConscpritptsByNumberForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConscpritptsByNumberForm.Designer.cs">
+      <DependentUpon>ConscpritptsByNumberForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConscriptsByNumberFindForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConscriptsByNumberFindForm.Designer.cs">
+      <DependentUpon>ConscriptsByNumberFindForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConscriptsListFindForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConscriptsListFindForm.Designer.cs">
+      <DependentUpon>ConscriptsListFindForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConscriptsListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConscriptsListForm.Designer.cs">
+      <DependentUpon>ConscriptsListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConscriptsWriteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConscriptsWriteForm.Designer.cs">
+      <DependentUpon>ConscriptsWriteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EducationTypeWriteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EducationTypeWriteForm.Designer.cs">
+      <DependentUpon>EducationTypeWriteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FitnessCategoriesWriteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FitnessCategoriesWriteForm.Designer.cs">
+      <DependentUpon>FitnessCategoriesWriteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainBtnForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainBtnForm.Designer.cs">
+      <DependentUpon>MainBtnForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MedicalExaminationsListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalExaminationsListForm.Designer.cs">
+      <DependentUpon>MedicalExaminationsListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MedicalExaminationWriteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalExaminationWriteForm.Designer.cs">
+      <DependentUpon>MedicalExaminationWriteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MedicalInspectorsListFindForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalInspectorsListFindForm.Designer.cs">
+      <DependentUpon>MedicalInspectorsListFindForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MedicalInspectorsListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalInspectorsListForm.Designer.cs">
+      <DependentUpon>MedicalInspectorsListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MedicalInspectorsWriteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalInspectorsWriteForm.Designer.cs">
+      <DependentUpon>MedicalInspectorsWriteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MilitaryAssignmentWriteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MilitaryAssignmentWriteForm.Designer.cs">
+      <DependentUpon>MilitaryAssignmentWriteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MilitaryCommisariatListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MilitaryCommisariatListForm.Designer.cs">
+      <DependentUpon>MilitaryCommisariatListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MilitaryCommissariatListFindForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MilitaryCommissariatListFindForm.Designer.cs">
+      <DependentUpon>MilitaryCommissariatListFindForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MilitaryCommissariatWriteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MilitaryCommissariatWriteForm.Designer.cs">
+      <DependentUpon>MilitaryCommissariatWriteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RowDeleteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RowDeleteForm.Designer.cs">
+      <DependentUpon>RowDeleteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticsByCommissariatDiagramForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatisticsByCommissariatDiagramForm.Designer.cs">
+      <DependentUpon>StatisticsByCommissariatDiagramForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticsByEducationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatisticsByEducationForm.Designer.cs">
+      <DependentUpon>StatisticsByEducationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticsByFitnessCategoriesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatisticsByFitnessCategoriesForm.Designer.cs">
+      <DependentUpon>StatisticsByFitnessCategoriesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticsConscrieptVDtier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatisticsConscrieptVDtier.Designer.cs">
+      <DependentUpon>StatisticsConscrieptVDtier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticsConscriptAtierForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatisticsConscriptAtierForm.Designer.cs">
+      <DependentUpon>StatisticsConscriptAtierForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticsConscriptByMilitaryCommissariatFindForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatisticsConscriptByMilitaryCommissariatFindForm.Designer.cs">
+      <DependentUpon>StatisticsConscriptByMilitaryCommissariatFindForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticsConscriptsByMedicalInspectorFindForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatisticsConscriptsByMedicalInspectorFindForm.Designer.cs">
+      <DependentUpon>StatisticsConscriptsByMedicalInspectorFindForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticsConscriptsByMedicalInspectorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatisticsConscriptsByMedicalInspectorForm.Designer.cs">
+      <DependentUpon>StatisticsConscriptsByMedicalInspectorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticsConscriptsByMilitaryCommissariatForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatisticsConscriptsByMilitaryCommissariatForm.Designer.cs">
+      <DependentUpon>StatisticsConscriptsByMilitaryCommissariatForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticsConscriptsNotCheckedForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatisticsConscriptsNotCheckedForm.Designer.cs">
+      <DependentUpon>StatisticsConscriptsNotCheckedForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatisticsForm.Designer.cs">
+      <DependentUpon>StatisticsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TroopTypesWriteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TroopTypesWriteForm.Designer.cs">
+      <DependentUpon>TroopTypesWriteForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ConscpritptsByNumberForm.resx">
+      <DependentUpon>ConscpritptsByNumberForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConscriptsByNumberFindForm.resx">
+      <DependentUpon>ConscriptsByNumberFindForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConscriptsListFindForm.resx">
+      <DependentUpon>ConscriptsListFindForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConscriptsListForm.resx">
+      <DependentUpon>ConscriptsListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConscriptsWriteForm.resx">
+      <DependentUpon>ConscriptsWriteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EducationTypeWriteForm.resx">
+      <DependentUpon>EducationTypeWriteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FitnessCategoriesWriteForm.resx">
+      <DependentUpon>FitnessCategoriesWriteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainBtnForm.resx">
+      <DependentUpon>MainBtnForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalExaminationsListForm.resx">
+      <DependentUpon>MedicalExaminationsListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalExaminationWriteForm.resx">
+      <DependentUpon>MedicalExaminationWriteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalInspectorsListFindForm.resx">
+      <DependentUpon>MedicalInspectorsListFindForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalInspectorsListForm.resx">
+      <DependentUpon>MedicalInspectorsListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalInspectorsWriteForm.resx">
+      <DependentUpon>MedicalInspectorsWriteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MilitaryAssignmentWriteForm.resx">
+      <DependentUpon>MilitaryAssignmentWriteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MilitaryCommisariatListForm.resx">
+      <DependentUpon>MilitaryCommisariatListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MilitaryCommissariatListFindForm.resx">
+      <DependentUpon>MilitaryCommissariatListFindForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MilitaryCommissariatWriteForm.resx">
+      <DependentUpon>MilitaryCommissariatWriteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RowDeleteForm.resx">
+      <DependentUpon>RowDeleteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatisticsByCommissariatDiagramForm.resx">
+      <DependentUpon>StatisticsByCommissariatDiagramForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatisticsByEducationForm.resx">
+      <DependentUpon>StatisticsByEducationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatisticsByFitnessCategoriesForm.resx">
+      <DependentUpon>StatisticsByFitnessCategoriesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatisticsConscrieptVDtier.resx">
+      <DependentUpon>StatisticsConscrieptVDtier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatisticsConscriptAtierForm.resx">
+      <DependentUpon>StatisticsConscriptAtierForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatisticsConscriptByMilitaryCommissariatFindForm.resx">
+      <DependentUpon>StatisticsConscriptByMilitaryCommissariatFindForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatisticsConscriptsByMedicalInspectorFindForm.resx">
+      <DependentUpon>StatisticsConscriptsByMedicalInspectorFindForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatisticsConscriptsByMedicalInspectorForm.resx">
+      <DependentUpon>StatisticsConscriptsByMedicalInspectorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatisticsConscriptsByMilitaryCommissariatForm.resx">
+      <DependentUpon>StatisticsConscriptsByMilitaryCommissariatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatisticsConscriptsNotCheckedForm.resx">
+      <DependentUpon>StatisticsConscriptsNotCheckedForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatisticsForm.resx">
+      <DependentUpon>StatisticsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TroopTypesWriteForm.resx">
+      <DependentUpon>TroopTypesWriteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\RussianFederationEmblem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\icons8-закрыть-окно-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\military %281%29-negate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\data-protection %281%29-negate %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\health_check_negate.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
